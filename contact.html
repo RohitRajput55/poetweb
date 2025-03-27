@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Kavitri Manch - Women's Empowerment Through Poetry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+</head>
+<body class="">
+    <!-- Enhanced Responsive Navigation -->
+  
+    <nav class="fixed w-full z-50 shadow-sm" style="background: linear-gradient(to bottom, #f7ad32 60px, #bb420b 60px);">
+        <div class="container ]  mx-auto px-6 py-3">
+            <div class="flex items-center justify-between relative">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-4 z-50">
+                    <img src="https://i.postimg.cc/WbXdZ5yy/logo.jpg " alt="DKM Logo" class="h-16 w-16 rounded-lg object-cover shadow-md border-2 border-white">
+                    <div id = "nav" class="text-left">
+                        <h1 class="text-xl font-bold uppercase tracking-wide" style="color: #a05334;">
+                            DELHI KAVITRI MANCH
+                        </h1>
+                        <p class="text-sm font-medium" style="color: #823c24;">
+                            WOMAN EMPOWERMENT COMMUNITY
+                        </p>
+                        <p class="text-sm font-medium" style="color: #f7ad32;">
+                            A Mission to Empower Poets and Writers 
+                        </p>
+                    </div>
+                </div>
+                <div class="fixed bottom-8 right-5 z-50">
+                  <a href="https://wa.me/9350267100" target="_blank" rel="noopener noreferrer" class="block">
+                    <button class="w-16 h-16 bg-[#bb420b] hover:bg-[#128C7E] rounded-full shadow-xl flex items-center justify-center transition-all transform hover:scale-110 group">
+                      <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                      </svg>
+                      
+                    </button>
+                  </a>
+                </div>
+                <!-- Centered Desktop Menu -->
+                <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8 items-center bg-white/10 backdrop-blur-sm px-8 py-2 rounded-full border border-white/20">
+                    <a href="/index.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/about.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/poetry.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                      Poetries
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/events.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        Events
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/contact.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden" style="color: #a05334;">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-3 pb-4" style="background: #bb420b;">
+                <a href="/index.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Home</a>
+                <a href="/about.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">About</a>
+                <a href="/poetry.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Poetries</a>
+                <a href="events.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Events</a>
+                <a href="/contact.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+    
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+
+<section class="contact-section " style="background-color: #fef8ee; padding: 4rem 1rem; font-family: 'Poppins', sans-serif;">
+    <div class="container " style="max-width: 1200px; margin: 0 auto;">
+      <div class="contact-header mt-[26%] md:mt-[5%]" style="text-align: center; margin-bottom: 3rem; padding: 0 1rem;">
+        <h2 style="font-size: 2rem; color: #bb420b; margin-bottom: 1rem; font-weight: 600;">Connect With Us</h2>
+        <p style="font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto; line-height: 1.6;">
+          We'd love to hear your thoughts, feedback, or poetry submissions. Reach out to us through any of the channels below or send us a message directly.
+        </p>
+      </div>
+  
+      <div class="contact-content" style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+        <!-- Contact Form -->
+        <div class="contact-form" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+          <h3 style="font-size: 1.5rem; color: #bb420b; margin-bottom: 1.5rem; font-weight: 500;">Send Us a Message</h3>
+          <form>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="name" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Your Name</label>
+              <input type="text" id="name" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; transition: all 0.3s ease;" placeholder="Enter your name">
+            </div>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="email" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Email Address</label>
+              <input type="email" id="email" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; transition: all 0.3s ease;" placeholder="Enter your email">
+            </div>
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="subject" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Subject</label>
+              <select id="subject" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; color: #555;">
+                <option value="">Select a subject</option>
+                <option value="feedback">Feedback</option>
+                <option value="submission">Poetry Submission</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Other Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 2rem;">
+              <label for="message" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Your Message</label>
+              <textarea id="message" rows="5" style="width: 100%; padding: 0.8rem 1rem; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; resize: vertical;" placeholder="Write your message here..."></textarea>
+            </div>
+            <button type="submit" style="background-color: #f7ad32; color: white; border: none; padding: 1rem 2rem; font-size: 1rem; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; width: 100%;">
+              Send Message
+              <span style="margin-left: 8px;">→</span>
+            </button>
+          </form>
+        </div>
+  
+        <!-- Contact Info -->
+        <div class="contact-info" style="display: flex; flex-direction: column; gap: 2rem;">
+          <div class="info-card" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <h3 style="font-size: 1.5rem; color: #bb420b; margin-bottom: 1.5rem; font-weight: 500;">Contact Information</h3>
+            <div class="info-item" style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+              <div class="icon" style="background-color: #f7ad32; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: #333; margin-bottom: 0.3rem; font-weight: 500;">Our Address</h4>
+                <p style="color: #666; line-height: 1.5;">D-1/75 ,Sector 16 Rohini ,Delhi 110089F</p>
+              </div>
+            </div>
+            <div class="info-item" style="display: flex; align-items: flex-start; margin-bottom: 1.5rem;">
+              <div class="icon" style="background-color: #f7ad32; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: #333; margin-bottom: 0.3rem; font-weight: 500;">Email Us</h4>
+                <p style="color: #666; line-height: 1.5;">Ddeepali.chowdhary@gmail.com</p>
+              </div>
+            </div>
+            <div class="info-item" style="display: flex; align-items: flex-start;">
+              <div class="icon" style="background-color: #f7ad32; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 style="font-size: 1.1rem; color: #333; margin-bottom: 0.3rem; font-weight: 500;">Call Us</h4>
+                <p style="color: #666; line-height: 1.5;">+91 9350267100<br>Mon-Fri, 9am-5pm EST</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="social-media" style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <h3 style="font-size: 1.5rem; color: #bb420b; margin-bottom: 1.5rem; font-weight: 500;">Follow Us</h3>
+            <p style="color: #666; margin-bottom: 1.5rem; line-height: 1.6;">Connect with our poetry community on social media for daily inspiration and updates.</p>
+            <div class="social-icons" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#" style="background-color: #f7ad32; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" style="background-color: #f7ad32; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" style="background-color: #f7ad32; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" style="background-color: #f7ad32; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; transition: all 0.3s ease;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zM7.119 20.452h-3.788v-11h3.788v11zm-1.894-12.895c-1.215 0-2.199-.985-2.199-2.199 0-1.215.984-2.2 2.199-2.2s2.2.985 2.2 2.2c0 1.214-.985 2.199-2.2 2.199zm13.106 12.895h-3.788v-5.868c0-1.399-.028-3.194-1.949-3.194-1.95 0-2.248 1.522-2.248 3.091v5.971h-3.788v-11h3.639v1.5h.052c.507-.962 1.745-1.975 3.588-1.975 3.837 0 4.545 2.527 4.545 5.816v5.658z"/>
+                </svg>
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Map Section -->
+      <section class="contact-section" style="background-color: #fef8ee; padding: 4rem 1rem; font-family: 'Poppins', sans-serif;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+          
+          <!-- Elegant Map Section -->
+          <div class="poetic-map" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.08); margin: 4rem 0; height: 500px; border: 1px solid rgba(187, 66, 11, 0.1);">
+            
+            <!-- Watercolor-inspired Background -->
+            <div class="map-art" style="position: absolute; inset: 0; background: linear-gradient(135deg, rgba(247,173,50,0.03) 0%, rgba(187,66,11,0.03) 100%); z-index: 0;">
+              <div style="position: absolute; top: 20%; left: 10%; width: 100px; height: 100px; border-radius: 50%; background: rgba(247, 173, 50, 0.05); filter: blur(20px); animation: softPulse 8s infinite alternate;"></div>
+              <div style="position: absolute; bottom: 15%; right: 10%; width: 150px; height: 150px; border-radius: 50%; background: rgba(187, 66, 11, 0.03); filter: blur(25px); animation: softPulse 12s infinite alternate-reverse;"></div>
+            </div>
+            
+            <!-- Minimalist Map Header -->
+            <div class="map-header" style="position: relative; z-index: 2; padding: 1.5rem 2rem; background: white; border-bottom: 1px solid rgba(187,66,11,0.1); display: flex; align-items: center;">
+              <div style="width: 40px; height: 40px; background: #f7ad32; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; animation: gentleFadeIn 0.8s ease-out;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div style="animation: gentleFadeIn 0.8s ease-out 0.2s forwards; opacity: 0; transform: translateY(5px);">
+                <h3 style="margin: 0; color: #bb420b; font-size: 1.25rem;">Our Creative Space</h3>
+                <p style="margin: 0.25rem 0 0; color: #666; font-size: 0.9rem;">Where verses come alive</p>
+              </div>
+            </div>
+            
+            <!-- Clean Map Container -->
+            <div class="map-embed" style="position: relative; height: calc(100% - 72px);">
+              <!-- Map with Paper-like Texture -->
+              
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.339850736395!2d77.12652267457719!3d28.739268479227327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d01170df7cf7b%3A0xed46552f21c8829e!2sBlock%20D%2C%20Pocket%2C%201%2C%20Block-D1%2C%20Pocket%201%2C%20Sector%2016%2C%20Rohini%2C%20Delhi%2C%20110089!5e0!3m2!1sen!2sin!4v1742989922418!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                  width="100%" 
+                  height="100%" 
+                  style="border:0; filter: sepia(15%) brightness(105%) contrast(90%);" 
+                  allowfullscreen="" 
+                  loading="lazy">
+                </iframe>
+              </div>
+              
+              <!-- Delicate Location Marker -->
+              <div class="location-marker" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10; animation: gentleFloat 4s ease-in-out infinite;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#bb420b" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3" fill="#f7ad32"></circle>
+                </svg>
+              </div>
+              
+              <!-- Subtle Address Panel -->
+              <div class="address-panel" style="position: absolute; bottom: 2rem; left: 2rem; right: 2rem; max-width: 300px; background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border: 1px solid rgba(187,66,11,0.1); animation: slideUpFadeIn 0.6s ease-out 0.3s forwards; opacity: 0; transform: translateY(20px);">
+                <div style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
+                  <div style="width: 24px; height: 24px; background: #f7ad32; border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-right: 0.75rem; flex-shrink: 0;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 style="margin: 0 0 0.25rem; color: #bb420b; font-size: 1rem;">Poetry House</h4>
+                    <p style="margin: 0; color: #666; font-size: 0.85rem; line-height: 1.5;">
+                        D-1/75 ,Sector 16 Rohini,<br>
+                        Delhi 110089
+                    </p>
+                  </div>
+                </div>
+                <a href="https://maps.google.com?q=Block+D,+Pocket+1,+Block-D1,+Pocket+1,+Sector+16,+Rohini,+Delhi,+110089" 
+                style="display: inline-flex; align-items: center; justify-content: center; background: #f7ad32; color: white; padding: 0.6rem 1rem; border-radius: 6px; font-size: 0.85rem; text-decoration: none; transition: all 0.3s ease; width: 100%;"
+                target="_blank"
+                rel="noopener noreferrer">
+                Get Directions
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px; transition: transform 0.3s ease;">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+             </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <style>
+          /* Refined Animations */
+          @keyframes gentleFloat {
+            0%, 100% { transform: translate(-50%, -50%); }
+            50% { transform: translate(-50%, -53%); }
+          }
+          
+          @keyframes softPulse {
+            0% { opacity: 0.8; transform: scale(1); }
+            100% { opacity: 0.4; transform: scale(1.1); }
+          }
+          
+          @keyframes gentleFadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          
+          @keyframes slideUpFadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          
+          /* Hover Effects */
+          .address-panel a:hover {
+            background: #bb420b;
+          }
+          
+          .address-panel a:hover svg {
+            transform: translateX(3px);
+          }
+          
+          /* Responsive Adjustments */
+          @media (max-width: 768px) {
+            .poetic-map {
+              height: 400px;
+              border-radius: 16px;
+            }
+            
+            .address-panel {
+              left: 1rem;
+              right: 1rem;
+              bottom: 1rem;
+              max-width: none;
+            }
+          }
+        </style>
+      </section>
+  
+    <style>
+      /* Responsive adjustments */
+      @media (min-width: 768px) {
+        .contact-content {
+          grid-template-columns: 1fr 1fr !important;
+        }
+        
+        .contact-header h2 {
+          font-size: 2.5rem !important;
+        }
+        
+        .contact-form,
+        .info-card,
+        .social-media {
+          padding: 2rem !important;
+        }
+        
+        .map-container {
+          margin: 4rem 0 !important;
+          border-radius: 16px !important;
+        }
+        
+        .map-container > div:first-child h3 {
+          font-size: 1.5rem !important;
+          padding: 1.5rem !important;
+        }
+        
+        .map-container > div:last-child {
+          flex-direction: row !important;
+          align-items: center !important;
+          justify-content: space-between !important;
+          padding: 1.5rem !important;
+        }
+        
+        .map-container > div:last-child a {
+          width: auto !important;
+        }
+      }
+      
+      /* Map hover effects */
+      .map-container a:hover {
+        background: #bb420b !important;
+        transform: translateY(-2px);
+      }
+      
+      /* Hide fallback when iframe loads */
+      .map-container iframe {
+        display: none;
+      }
+      
+      .map-container iframe.loaded {
+        display: block;
+      }
+      
+      .map-container iframe.loaded + .map-fallback {
+        display: none;
+      }
+    </style>
+  
+    <script>
+      // Detect when iframe loads to hide fallback
+      document.addEventListener('DOMContentLoaded', function() {
+        const iframe = document.querySelector('.map-container iframe');
+        iframe.onload = function() {
+          iframe.classList.add('loaded');
+        };
+        // Fallback in case iframe never loads
+        setTimeout(function() {
+          iframe.classList.add('loaded');
+        }, 3000);
+      });
+    </script>
+  </section>
+  
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-2xl">
+        <h2 class="text-4xl font-bold text-center mb-16 gradient-text" data-aos="fade-up">Join the Movement</h2>
+        <form class="space-y-6">
+            <input type="text" placeholder="Your Name" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500">
+            <input type="email" placeholder="Your Email" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500">
+            <textarea rows="5" placeholder="Your Message" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500"></textarea>
+            <button class="w-full bg-[#f7ad32] text-white py-4 rounded-xl hover:bg-purple-700 transition">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out'
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('shadow-lg');
+            nav.classList.add('bg-white/95');
+        } else {
+            nav.classList.remove('shadow-lg');
+            nav.classList.remove('bg-white/95');
+        }
+    });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true,
+        easing: 'ease-in-out'
+    });
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close menu on click outside
+    document.addEventListener('click', (e) => {
+        if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('shadow-lg', window.scrollY > 50);
+        nav.classList.toggle('bg-white/95', window.scrollY > 50);
+    });
+
+    // Smooth scroll for navigation
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+            mobileMenu.classList.add('hidden');
+        });
+    });
+</script>
+
+<!-- Add this before closing body tag -->
+<footer class="bg-[#bb420b]  text-white mt-20">
+<div class="container mx-auto px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8" data-aos="fade-up">
+        <!-- About Section -->
+        <div class="space-y-4">
+            <h3 class="text-2xl font-bold text-[#f7ad32]">Delhi Kavitri Manch</h3>
+            <p class="text-gray-300 text-sm">Empowering women through the transformative power of poetry and literature since 2018.</p>
+            <div class="flex space-x-4 mt-4">
+                <!-- Twitter -->
+                <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="Twitter">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+            
+                <!-- Facebook -->
+                <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="Facebook">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+            
+                <!-- Instagram -->
+                <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="Instagram">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+            
+                <!-- LinkedIn -->
+                <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="LinkedIn">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+            
+                <!-- YouTube -->
+                <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="YouTube">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                    </svg>
+                </a>
+            
+                <!-- GitHub -->
+                <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="GitHub">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.332-1.756-1.332-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="space-y-4">
+            <h4 class="text-lg font-semibold text-[#f7ad32]">Quick Links</h4>
+            <ul class="space-y-2">
+                <li><a href="/index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                <li><a href="/about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                <li><a href="/events.html" class="text-gray-300 hover:text-white transition">Events</a></li>
+                <li><a href="/contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="space-y-4">
+            <h4 class="text-lg font-semibold text-[#f7ad32]">Contact Us</h4>
+            <div class="space-y-2 text-gray-300">
+                <p class="flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-[#f7ad32]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    D-1/75 ,Sector 16 Rohini ,Delhi 110089
+                </p>
+                <p class="flex items-center">
+                    <svg class="w-5 h-5 mr-2 text-[#f7ad32]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    Ddeepali.chowdhary@gmail.com
+                </p>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="space-y-4">
+            <h4 class="text-lg font-semibold text-[#f7ad32]">Stay Updated</h4>
+            <form class="flex flex-col space-y-3">
+                <input type="email" placeholder="Your email" class="px-4 py-2 rounded-lg  border border-[#f7ad32] focus:outline-none focus:ring-2 focus:ring-pink-300">
+                <button class="bg-[#f7ad32] text-white px-4 py-2 rounded-lg hover:bg-[#a05334] transition transform hover:scale-105">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="border-t border-[#f7ad32] mt-8 pt-8 text-center text-gray-400 text-sm" data-aos="fade-up">
+        <p class = "text-[#f7ad32]">© 2025 Delhi Kavitri Manch. All rights reserved.</p>
+        <p class="mt-2  text-[#f7ad32]">Empowering women through literature and poetry</p>
+    </div>
+</div>
+</footer>
+</body>
+</html>

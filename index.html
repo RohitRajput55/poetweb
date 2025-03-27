@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Kavitri Manch - Women's Empowerment Through Poetry</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   
+</head>
+<body class="">
+    <!-- Enhanced Responsive Navigation -->
+  
+    <nav class="fixed w-full z-50 shadow-sm" style="background: linear-gradient(to bottom, #f7ad32 60px, #bb420b 60px);">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between relative">
+                <!-- Logo Section -->
+                <div class="flex items-center space-x-4 z-50">
+                    <img src="https://i.postimg.cc/WbXdZ5yy/logo.jpg " alt="DKM Logo" class="h-16 w-16 rounded-lg object-cover shadow-md border-2 border-white">
+                    <div id = "nav" class="text-left">
+                        <h1  class="text-xl font-bold uppercase tracking-wide" style="color: #a05334;">
+                            DELHI KAVITRI MANCH
+                        </h1>
+                        <p class="text-sm font-medium" style="color: #823c24;">
+                            WOMAN EMPOWERMENT COMMUNITY
+                        </p>
+                        <p class="text-sm font-medium" style="color: #f7ad32;">
+                            A Mission to Empower Poets and Writers 
+                        </p>
+                    </div>
+                </div>
+                <div class="fixed bottom-8 right-5 z-50">
+                    <a href="https://wa.me/9350267100" target="_blank" rel="noopener noreferrer" class="block">
+                      <button class="w-16 h-16 bg-[#bb420b] hover:bg-[#128C7E] rounded-full shadow-xl flex items-center justify-center transition-all transform hover:scale-110 group">
+                        <svg class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        
+                      </button>
+                    </a>
+                  </div>
+                <!-- Centered Desktop Menu -->
+                <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 space-x-8 items-center bg-white/10 backdrop-blur-sm px-8 py-2 rounded-full border border-white/20">
+                    <a href="/index.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        Home
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/about.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        About
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/poetry.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        Poetries
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/events.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        Events
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                    <a href="/contact.html" class="font-medium hover:text-[#823c24]  relative group" style="color: #a05334;">
+                        Contact
+                        <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#823c24]  group-hover:w-full"></span>
+                    </a>
+                </div>
+    
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden" style="color: #a05334;">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-3 pb-4" style="background: #bb420b;">
+                <a href="/index.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Home</a>
+                <a href="/about.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">About</a>
+                <a href="/poetry.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Poetries</a>
+                <a href="/events.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Events</a>
+                <a href="/contact.html" class="block font-medium px-4 py-3 hover:bg-white/10 rounded-lg transition-colors" style="color: #f7ad32;">Contact</a>
+            </div>
+        </div>
+        
+    </nav>
+    
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            mobileMenu.classList.toggle('hidden');
+        });
+    
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+    </script>
+    
+
+
+    <!-- Updated Hero Section -->
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #bb420b, #f7ad32);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .empowerment-bg {
+            background-image: url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+<section id="home" class="relative h-screen overflow-hidden">
+    <div class="hero-slider">
+        <!-- Slide 1 -->
+        <div class="absolute inset-0 slide active">
+            <div class="absolute inset-0 image-wrapper">
+                <img src="https://img.freepik.com/free-photo/pretty-woman-with-book-sitting-near-tree_23-2147883258.jpg?t=st=1742731096~exp=1742734696~hmac=84e75ba4871850f1b8ff5b15361a03bd785b12cb9bd446633204978978a271e9&w=2000" 
+                     class="w-full h-full object-cover"
+                     alt="Women empowerment through poetry">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#f7ad32]/30 to-[#bb420b]/20"></div>
+            </div>
+            <div class="content absolute left-6 md:left-12 bottom-20 text-white z-10">
+                <h1 class="text-4xl md:text-7xl font-bold mb-4 opacity-0">Delhi Kavitri Manch</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-0">Amplifying voices through verse</p>
+                <button class="px-8 py-3 rounded-full opacity-0 hover:bg-[#bb420b] transition" style="background-color: #f7ad32;">
+                    Join Movement
+                </button>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="absolute inset-0 slide">
+            <div class="absolute inset-0 image-wrapper">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-poetry-club-background_23-2149279472.jpg?t=st=1742735166~exp=1742738766~hmac=901c6d86f14b2ed1aa50c6e8faa06dd495c2a66e469a2a04b88d61cd1322026e&w=2000" 
+                     class="w-full h-full object-cover"
+                     alt="Women writing together">
+                <div class="absolute inset-0 bg-gradient-to-r from-[#f7ad32]/30 to-[#bb420b]/20"></div>
+            </div>
+            <div class="content absolute left-6 md:left-12 bottom-20 text-white z-10">
+                <h1 class="text-4xl md:text-7xl font-bold mb-4 opacity-0">Delhi Kavitri Manch</h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-0">Creating change through words</p>
+                <button class="px-8 py-3 rounded-full opacity-0 hover:bg-[#bb420b] transition" style="background-color: #f7ad32;">
+                    View Events
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Dots -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-3 z-10" id="slider-dots"></div>
+</section>
+
+<style>
+    .slide {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s ease;
+    }
+
+    .slide.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .image-wrapper {
+        transform: scale(1.1);
+        transition: transform 8s ease-out;
+    }
+
+    .active .image-wrapper {
+        transform: scale(1);
+    }
+</style>
+
+<script>
+    // Initialize slider
+    const slides = document.querySelectorAll('.slide');
+    const dotsContainer = document.getElementById('slider-dots');
+    let currentSlide = 0;
+    let autoPlayInterval;
+
+    // Create navigation dots
+    slides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.className = `w-3 h-3 rounded-full cursor-pointer ${index === 0 ? 'bg-[#bb420b]' : 'bg-white/50'}`;
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    // GSAP Animations
+    function animateContent(content) {
+        gsap.timeline()
+            .fromTo(content.querySelector('img'), 
+                { scale: 1.1 },
+                { scale: 1, duration: 8, ease: "power2.out" }, 0)
+            .fromTo(content.querySelectorAll('h1, p, button'),
+                { y: 50, opacity: 0 },
+                { 
+                    y: 0,
+                    opacity: 1,
+                    stagger: 0.2,
+                    duration: 1,
+                    ease: "power4.out"
+                }, 0.5);
+    }
+
+    // Slide transition
+    function goToSlide(index) {
+        if (index === currentSlide) return;
+
+        const currentContent = slides[currentSlide].querySelector('.content');
+        const nextContent = slides[index].querySelector('.content');
+
+        // Animate out current slide
+        gsap.to(currentContent.children, {
+            y: -50,
+            opacity: 0,
+            duration: 0.5,
+            stagger: 0.1,
+            ease: "power2.in"
+        });
+
+        // Update classes
+        slides[currentSlide].classList.remove('active');
+        slides[index].classList.add('active');
+
+        // Update dots
+        dotsContainer.children[currentSlide].classList.replace('bg-[#bb420b]', 'bg-white/50');
+        dotsContainer.children[index].classList.replace('bg-white/50', 'bg-[#bb420b]');
+
+        // Animate in next slide
+        gsap.fromTo(nextContent.children,
+            { y: 50, opacity: 0 },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.2,
+                ease: "power4.out",
+                delay: 0.5
+            }
+        );
+
+        currentSlide = index;
+    }
+
+    // Auto-play
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(() => {
+            const nextSlide = (currentSlide + 1) % slides.length;
+            goToSlide(nextSlide);
+        }, 8000);
+    }
+
+    // Initialize first slide
+    animateContent(slides[0]);
+    startAutoPlay();
+
+    // Pause on hover
+    document.querySelector('.hero-slider').addEventListener('mouseenter', () => {
+        clearInterval(autoPlayInterval);
+    });
+
+    document.querySelector('.hero-slider').addEventListener('mouseleave', startAutoPlay);
+</script>
+
+    <!-- Enhanced Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center"> 
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-[#f7ad32] to-[#bb420b] bg-clip-text text-transparent" data-aos="fade-up">
+                Empowerment Through Literature
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                Breaking barriers and building bridges through the power of women's voices in poetry
+            </p>
+            <div class="floating" data-aos="zoom-in">
+                <svg class="w-24 h-24 mx-auto text-[#bb420b]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!-- <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="relative" data-aos="fade-right">
+                    <div class="absolute -inset-2 bg-purple-100 rounded-2xl transform rotate-2"></div>
+                    <img src="https://img.freepik.com/free-photo/bright-positive-fashion-studio-portrait-young-girl-with-nude-lips-bright-make-up-stylish-trendy-outfit-pink-skirt-smart-casual_496169-516.jpg?t=st=1742738886~exp=1742742486~hmac=d11fa512bb99ceeede9189d4c3eafccace6f76a5a02f4540912c7e3c2478a85a&w=2000" class="rounded-2xl relative" alt="Women's gathering">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-4xl font-bold mb-6 gradient-text">About Us</h2>
+                    <p class="text-gray-600 mb-6">
+                        Delhi Kavitri Manch is a safe space for women to express, create, and empower through the art of poetry. We believe in the transformative power of words to challenge stereotypes and create social change.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="about" class="py-20 relative overflow-hidden">
+        <!-- Floating Elements -->
+        <div class="absolute -top-20 -right-20 w-72 h-72 bg-[#f7ad32]/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-[#f7ad32]/20 rounded-full blur-3xl"></div>
+    
+        <div class="container mx-auto px-6 relative">
+            <!-- Section Header -->
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+                    Empowering Voices, <br>Creating Change
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    A revolutionary platform where words transform into weapons of empowerment
+                </p>
+            </div>
+    
+            <!-- Content Grid -->
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Image Section -->
+                <div class="relative group" >
+                    <!-- Gradient Background -->
+                    <div class="absolute -inset-4 bg-gradient-to-r from-[#f7ad32] to-[#bb420b] rounded-3xl transform rotate-2 blur-xl opacity-30 group-hover:opacity-50 transition"></div>
+
+                    
+                    <!-- Image Container -->
+                    <div class="relative overflow-hidden rounded-3xl">
+                       
+                        <img src="https://i.postimg.cc/WbXdZ5yy/logo.jpg " 
+                             alt="Women empowerment group"
+                             class="w-full h-[500px] object-cover  group-hover:scale-105"
+                        >
+                        
+                        <!-- Gradient Overlay -->
+                       
+                    </div>
+                </div>
+    
+                <!-- Text Content -->
+                <div class="space-y-8" data-aos="fade-left">
+                    <!-- Mission Statement -->
+                    <div class="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="w-8 h-8 bg-[#f7ad32] text-[#bb420b] rounded-full flex items-center justify-center mr-3">✊</span>
+                            About Us
+                        </h3>
+                        <p class="text-gray-600">
+                            Delhi Kavitri Manch is not just a poetry platform; it is a mission-driven literary movement that aims to amplify the voices of women poets and celebrate the power of words in shaping society. We believe that poetry has the potential to challenge stereotypes, ignite conversations, and bring about real change, making it a crucial tool in the movement for women’s empowerment.
+                        </p>
+                    </div>
+    
+                    <!-- Vision Statement -->
+                    <div class="p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="w-8 h-8 bg-[#f7ad32] text-[#bb420b] rounded-full flex items-center justify-center mr-3">🌟</span>
+                            Our Vision
+                        </h3>
+                        <p class="text-gray-600">
+                            Our vision is to create a strong, inclusive, and transformative literary community where poetry becomes a medium to empower, educate, and inspire. By providing a platform for women poets to publish their work, we aim to encourage self-expression, promote gender equality, and build a supportive ecosystem for literary talent.
+                        </p>
+                    </div>
+    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-2 gap-4" data-aos="zoom-in">
+                        <div class="p-6  bg-[#f7ad32] text-white rounded-2xl transform transition hover:scale-[1.02]">
+                            <div class="text-3xl font-bold mb-2">5K+</div>
+                            <div class="text-sm">Empowered Members</div>
+                        </div>
+                        <div class="p-6 bg-[#bb420b] text-white rounded-2xl transform transition hover:scale-[1.02]">
+                            <div class="text-3xl font-bold mb-2">200+</div>
+                            <div class="text-sm">Community Events</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Team Section -->
+            <div class="group text-center mt-10 flex flex-col items-center">
+                <div class="relative inline-block mb-6 mx-auto">
+                    <div class="absolute -inset-2 bg-purple-100 rounded-full transform rotate-3 transition group-hover:rotate-6"></div>
+                    <img src="https://i.postimg.cc/4NJKnDWt/founderimg.jpg " 
+                         class="w-48 h-48 object-cover rounded-full relative z-10 transform transition duration-500 group-hover:scale-105"
+                         alt="Dr.Deepali Chowdhary">
+                </div>
+                <h4 class="text-xl font-bold mb-2">Dr.Deepali Chowdhary</h4>
+                <p class="text-gray-600 mb-4">Poet & Social Activist</p>
+                <p class="text-sm text-gray-500 max-w-xs mx-auto">
+                    "We don't just write poetry - we write revolutions"
+                </p>
+            </div>
+    
+                    <!-- Add 2 more team members -->
+                </div>
+            </div>
+        </div>
+    
+        <!-- Animated Elements -->
+        <div class="absolute top-1/3 left-10 w-8 h-8 bg-pink-400/20 rounded-full animate-float"></div>
+        <div class="absolute top-2/4 right-20 w-6 h-6 bg-purple-400/20 rounded-full animate-float delay-1000"></div>
+    </section>
+    
+    <style>
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+    
+        .delay-1000 {
+            animation-delay: 1s;
+        }
+    
+        .gradient-text {
+            background: linear-gradient(45deg, #f7ad32, #bb420b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+    
+    <script>
+        // GSAP Animations
+        gsap.from(".group", {
+            scrollTrigger: {
+                trigger: "#about",
+                start: "top center"
+            },
+            duration: 1,
+            y: 50,
+            opacity: 0,
+            stagger: 0.2
+        });
+    
+        // Animate floating elements
+        gsap.to(".animate-float", {
+            y: 20,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+            duration: 3
+        });
+    </script>
+ 
+ <section id="unique-approach" class="py-20 relative overflow-hidden bg-gradient-to-b from-[rgba(247,173,50,0.15)] to-[rgba(187,66,11,0.20)]">
+
+  
+    <!-- Floating Background Elements -->
+    <div class="absolute top-20 left-10 w-24 h-24 bg-purple-200/20 rounded-full blur-2xl animate-float"></div>
+    <div class="absolute bottom-40 right-20 w-32 h-32 bg-pink-200/20 rounded-full blur-2xl animate-float-delayed"></div>
+    
+    <div class="container mx-auto px-6 relative">
+        <div class="max-w-4xl mx-auto text-center mb-20" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">
+                Our Revolutionary Approach
+            </h2>
+            <p class="text-xl text-gray-600">
+                Redefining literary empowerment through innovative strategies
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Animated Visual Elements -->
+            <div class="relative" data-aos="fade-right">
+                <div class="absolute -inset-8 bg-gradient-to-tr from-purple-500 to-pink-500 rounded-3xl opacity-10 blur-3xl"></div>
+                <div class="relative space-y-6">
+                    <!-- Floating Card 1 -->
+                    <div class="p-6 bg-white rounded-2xl shadow-lg transform transition hover:-translate-y-2 hover:shadow-xl">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-[#f7ad32] rounded-lg flex items-center justify-center mr-4">
+                                <span class="text-2xl">📖</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Publishing Platform</h3>
+                        </div>
+                        <p class="text-gray-600">Amplifying voices through our digital and print publications</p>
+                    </div>
+
+                    <!-- Floating Card 2 -->
+                    <div class="p-6 bg-white rounded-2xl shadow-lg transform transition hover:-translate-y-2 hover:shadow-xl ml-12" data-aos="zoom-in">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-[#bb420b] rounded-lg flex items-center justify-center mr-4">
+                                <span class="text-2xl">⚖️</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Equality Focus</h3>
+                        </div>
+                        <p class="text-gray-600">Championing gender equality through literary initiatives</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="space-y-8" data-aos="fade-left">
+                <div class="text-lg text-gray-600 leading-relaxed space-y-6">
+                    <p class="relative pl-8 border-l-4 border-[#f7ad32]">
+                        <span class="absolute -left-4 text-2xl">🌟</span>
+                        We envision a <span class="font-semibold text-[#a05334]">transformative literary community</span> where poetry becomes a catalyst for empowerment and social change.
+                    </p>
+
+                    <p class="relative pl-8 border-l-4 border-[#bb420b]">
+                        <span class="absolute -left-4 text-2xl">💡</span>
+                        Our <span class="font-semibold text-[#a05334]">inclusive ecosystem</span> nurtures talent through workshops, mentorship, and collaborative projects.
+                    </p>
+
+                    <div class="p-6 bg-white rounded-2xl shadow-lg" data-aos="zoom-in">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-[#f7ad32] p-4 rounded-lg">
+                                <span class="text-2xl">🌍</span>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-[#a05334] mb-2">Global Community</h4>
+                                <p class="text-sm text-gray-600">Connecting writers across 20+ countries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Icons -->
+        <div class="absolute top-1/4 left-20 w-12 h-12 bg-[#f7ad32]/30 rounded-full animate-float"></div>
+        <div class="absolute bottom-1/3 right-32 w-16 h-16 bg-[#bb420b]/30 rounded-full animate-float-delayed"></div>
+    </div>
+
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #f7ad32, #bb420b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(10deg); }
+        }
+
+        .animate-float {
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .animate-float-delayed {
+            animation: float 8s ease-in-out infinite 2s;
+        }
+
+        [data-aos="fade-up"] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        [data-aos="fade-up"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+    <script>
+        // Initialize AOS for scroll animations
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+
+        // GSAP animations for floating elements
+        gsap.to(".animate-float", {
+            y: 20,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+            duration: 3
+        });
+
+        gsap.to(".animate-float-delayed", {
+            y: 20,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+            duration: 3,
+            delay: 1
+        });
+    </script>
+</section>
+
+    <!-- Empowerment Initiatives Section -->
+    <section id="initiatives" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text" data-aos="fade-up">Our Empowerment Initiatives</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Original Cards -->
+                <div class="bg-[#f7ad32] bg-opacity-10 p-8 rounded-2xl" data-aos="fade-up">
+                    <div class="text-purple-600 text-3xl mb-4">✊</div>
+                    <h3 class="text-xl font-bold mb-4">Voice Amplification</h3>
+                    <p class="text-gray-600">Weekly poetry circles providing safe spaces for self-expression</p>
+                </div>
+    
+                <div class="bg-[#bb420b] bg-opacity-10 p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-purple-600 text-3xl mb-4">📖</div>
+                    <h3 class="text-xl font-bold mb-4">Education Programs</h3>
+                    <p class="text-gray-600">Free workshops on feminist literature and creative writing</p>
+                </div>
+    
+                <div class="bg-[#f7ad32] bg-opacity-10 p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-purple-600 text-3xl mb-4">🌍</div>
+                    <h3 class="text-xl font-bold mb-4">Community Outreach</h3>
+                    <p class="text-gray-600">Collaborations with NGOs for literacy programs in rural areas</p>
+                </div>
+    
+                <!-- New Additional Cards -->
+                <div class="bg-[#bb420b] bg-opacity-10 p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-purple-600 text-3xl mb-4">🎤</div>
+                    <h3 class="text-xl font-bold mb-4">Open Mic Nights</h3>
+                    <p class="text-gray-600">Monthly platforms for women to showcase their poetic talents</p>
+                </div>
+    
+                <div class="bg-[#f7ad32] bg-opacity-10 p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-purple-600 text-3xl mb-4">💡</div>
+                    <h3 class="text-xl font-bold mb-4">Mentorship Program</h3>
+                    <p class="text-gray-600">Pairing emerging writers with established feminist authors</p>
+                </div>
+    
+                <div class="bg-[#bb420b] bg-opacity-10 p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-purple-600 text-3xl mb-4">💻</div>
+                    <h3 class="text-xl font-bold mb-4">Digital Empowerment</h3>
+                    <p class="text-gray-600">Online workshops and publishing opportunities for digital content creation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add this section before the footer -->
+    <section id="poetry" class="py-12 md:py-20 bg-white overflow-hidden">
+        <div class="container mx-auto px-4 md:px-6">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 md:mb-20 gradient-text" data-aos="zoom-in">
+                Featured Poetry
+            </h2>
+    
+            <!-- Poetry Card 1 -->
+            <div class="flex flex-col lg:flex-row gap-8 md:gap-12 items-center mb-16 md:mb-24">
+                <div class="w-full lg:w-1/2 relative group transform transition-transform duration-500 hover:scale-[1.02]">
+                    <div class="absolute inset-0 bg-gradient-to-r from-[#ffecd2]/50 to-[#fcb69f]/50 rounded-[2.5rem] 
+                        rotate-1 transition-transform duration-500 group-hover:rotate-2"></div>
+                    <img src="https://img.freepik.com/free-photo/high-angle-open-books-flowers_23-2149871466.jpg?t=st=1743052852~exp=1743056452~hmac=78702e44ddf0be7289a0bf7b780cb549b17b02cf30c1974677e7a6c2f5863da4&w=740"
+                        alt="Woman writing poetry"
+                        class="rounded-[2.5rem] relative z-10 w-full h-[400px] object-cover shadow-2xl">
+                </div>
+                
+                <div class="w-full lg:w-1/2 relative poetry-card">
+                    <div class="text-[#bb420b] text-8xl absolute -top-6 -left-4 opacity-15 font-serif">“</div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-[#a05334]">The Fire Within</h3>
+                    <div class="space-y-4 mb-8">
+                        <p class="text-gray-700 md:text-lg leading-relaxed font-medium">
+                            My voice, once ember in the night,<br>
+                            Now flames that pierce through society's blight.<br>
+                            In every verse, a battle won,<br>
+                            The revolution has begun.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-14 h-14 rounded-full object-cover shadow-md" 
+                             src="https://img.freepik.com/free-photo/portrait-beautiful-young-woman-standing-grey-wall_231208-10760.jpg?t=st=1742734840~exp=1742738440~hmac=a742e4e734c03c4a1455d770f304dc90e14c084bd168da5a4210bc01b6d1761b&w=2000" 
+                             alt="Ananya Singh">
+                        <div>
+                            <p class="font-semibold text-gray-800">Ananya Singh</p>
+                            <p class="text-sm text-gray-500">Feminist Poet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Poetry Card 2 (Reversed) -->
+            <div class="flex flex-col lg:flex-row-reverse gap-8 md:gap-12 items-center mb-16 md:mb-24">
+                <div class="w-full lg:w-1/2 relative group transform transition-transform duration-500 hover:scale-[1.02]">
+                    <div class="absolute inset-0 bg-gradient-to-l from-[#ffecd2]/50 to-[#fcb69f]/50 rounded-[2.5rem] 
+                        -rotate-1 transition-transform duration-500 group-hover:-rotate-2"></div>
+                    <img src="https://img.freepik.com/free-photo/beautiful-mandala-concept-with-copy-space_23-2148804293.jpg?t=st=1743052896~exp=1743056496~hmac=2b010b41ff4363d3dc61752eb024e241a912272800baa2a2cd54f175789e83b7&w=740"
+                        alt="Poetry book"
+                        class="rounded-[2.5rem] relative z-10 w-full h-[400px] object-cover shadow-2xl">
+                </div>
+                
+                <div class="w-full lg:w-1/2 relative poetry-card">
+                    <div class="text-[#bb420b] text-8xl absolute -top-6 -left-4 opacity-15 font-serif">“</div>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6 text-[#a05334]">Unbound</h3>
+                    <div class="space-y-4 mb-8">
+                        <p class="text-gray-700 md:text-lg leading-relaxed font-medium">
+                            Chains of silence, now undone,<br>
+                            My words like rivers, freely run.<br>
+                            In every stanza, power grows,<br>
+                            A garden where equality flows.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-14 h-14 rounded-full object-cover shadow-md" 
+                             src="https://img.freepik.com/free-vector/flat-world-poetry-day-background_23-2149280499.jpg?t=st=1742734645~exp=1742738245~hmac=c80b38c646a08cc8a611ad929972346b3792d75e033f8e3e4c2f33ce70b6da22&w=2000" 
+                             alt="Priya Mehta">
+                        <div>
+                            <p class="font-semibold text-gray-800">Priya Mehta</p>
+                            <p class="text-sm text-gray-500">Spoken Word Artist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+    
+        .poetry-card {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+    
+        .poetry-card.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    
+        @media (max-width: 1024px) {
+            .poetry-card {
+                margin: 0 1rem;
+            }
+            
+            .gradient-text {
+                font-size: 3rem;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .poetry-card {
+                padding: 1.5rem;
+            }
+            
+            .gradient-text {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    
+    <script>
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        document.querySelectorAll('.poetry-card').forEach(card => {
+            observer.observe(card);
+        });
+    
+        // GSAP hover animations
+        gsap.utils.toArray('.group').forEach(group => {
+            group.addEventListener('mouseenter', () => {
+                gsap.to(group.querySelector('img'), {
+                    duration: 0.5,
+                    scale: 1.03,
+                    ease: 'power2.out'
+                });
+            });
+    
+            group.addEventListener('mouseleave', () => {
+                gsap.to(group.querySelector('img'), {
+                    duration: 0.5,
+                    scale: 1,
+                    ease: 'power2.out'
+                });
+            });
+        });
+    </script>
+
+    <!-- Featured Poets Section -->
+    <section id="poets" class="py-20 ">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text" data-aos="fade-up">Featured Poets</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Poet Card 1 -->
+                <div class="bg-white group p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in">
+                    <div class="relative mb-6 overflow-hidden">
+                        <div class="absolute -inset-2  rounded-2xl transform rotate-3 transition duration-300 group-hover:rotate-2"></div>
+                        <img src="https://img.freepik.com/free-photo/girl-reading-book-street_23-2148171450.jpg?t=st=1742990781~exp=1742994381~hmac=f670884b350153fcd5486674e1ae5da1ea568bc7a566d70e0c1908423139ac93&w=740" 
+                             class="rounded-2xl relative w-full h-64 object-cover hover:scale-105 transition duration-300"
+                             alt="Poet Anjali Verma">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Anjali Verma</h3>
+                            <p class="text-sm text-gray-500">Feminist Poet</p>
+                        </div>
+                        <div class="flex items-center bg-[#f7ad32] px-2 py-1 rounded-full">
+                            <span class="text-sm font-semibold text-[#bb420b]">4.8</span>
+                            <svg class="w-4 h-4 ml-1 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <span class="px-3 py-1 bg-[#f7ad32] text-[#a05334] rounded-full text-sm mr-2">Body Positivity</span>
+                        <span class="px-3 py-1 bg-[#bb420b] bg-opacity-10 text-[#a05334] rounded-full text-sm">Gender Equality</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Exploring themes of self-love and social justice through verse</p>
+                    <div class="border-t pt-4">
+                        <p class="text-[#a05334] italic">"Words are my revolution"</p>
+                    </div>
+                </div>
+    
+                <!-- Poet Card 2 -->
+                <div class="bg-white group p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative mb-6 overflow-hidden">
+                        <div class="absolute -inset-2  rounded-2xl transform -rotate-3 transition duration-300 group-hover:-rotate-2"></div>
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" 
+                             class="rounded-2xl relative w-full h-64 object-cover hover:scale-105 transition duration-300"
+                             alt="Poet Priya Mehta">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Priya Singh</h3>
+                            <p class="text-sm text-gray-500">Spoken Word Artist</p>
+                        </div>
+                        <div class="flex items-center bg-[#f7ad32] px-2 py-1 rounded-full">
+                            <span class="text-sm font-semibold text-[#a05334]">4.9</span>
+                            <svg class="w-4 h-4 ml-1 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <span class="px-3 py-1 bg-[#f7ad32] text-[#a05334] rounded-full text-sm mr-2">Mental Health</span>
+                        <span class="px-3 py-1 bg-[#bb420b] bg-opacity-10 text-[#a05334] rounded-full text-sm">Empowerment</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Championing mental health awareness through powerful performances</p>
+                    <div class="border-t pt-4">
+                        <p class="text-[#a05334] italic">"My voice echoes the silenced"</p>
+                    </div>
+                </div>
+
+                <div class="bg-white group p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative mb-6 overflow-hidden">
+                        <div class="absolute -inset-2  rounded-2xl transform -rotate-3 transition duration-300 group-hover:-rotate-2"></div>
+                        <img src="https://img.freepik.com/free-photo/young-indian-student-man-red-checkered-shirt-jeans-posed-city-with-mobile-phone-hands_627829-2674.jpg?t=st=1742991133~exp=1742994733~hmac=6e37a73277212e8985589686c70025241c55b12012174ed879c865a89585ef12&w=996" 
+                             class="rounded-2xl relative w-full h-64 object-cover hover:scale-105 transition duration-300"
+                             alt="Poet Priya Mehta">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Aman Gupta</h3>
+                            <p class="text-sm text-gray-500">Spoken Word Artist</p>
+                        </div>
+                        <div class="flex items-center bg-[#f7ad32] px-2 py-1 rounded-full">
+                            <span class="text-sm font-semibold text-[#a05334]">4.7</span>
+                            <svg class="w-4 h-4 ml-1 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <span class="px-3 py-1 bg-[#f7ad32] text-[#a05334] rounded-full text-sm mr-2">Mental Health</span>
+                        <span class="px-3 py-1 bg-[#bb420b] bg-opacity-10 text-[#a05334] rounded-full text-sm">Empowerment</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Championing mental health awareness through powerful performances</p>
+                    <div class="border-t pt-4">
+                        <p class="text-[#a05334] italic">"My voice echoes the silenced"</p>
+                    </div>
+                </div>
+
+                <div class="bg-white group p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative mb-6 overflow-hidden">
+                        <div class="absolute -inset-2  rounded-2xl transform -rotate-3 transition duration-300 group-hover:-rotate-2"></div>
+                        <img src="https://img.freepik.com/free-photo/side-view-woman-with-food-outdoors_23-2149461690.jpg?t=st=1742990949~exp=1742994549~hmac=448f278d15ab96a11bf13c8553e8918ebd45d438ea4bfe23a97d8f7b49d483b6&w=740" 
+                             class="rounded-2xl relative w-full h-64 object-cover hover:scale-105 transition duration-300"
+                             alt="Poet Priya Mehta">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Anamika Sharma</h3>
+                            <p class="text-sm text-gray-500">Spoken Word Artist</p>
+                        </div>
+                        <div class="flex items-center bg-[#f7ad32] px-2 py-1 rounded-full">
+                            <span class="text-sm font-semibold text-[#a05334]">4.9</span>
+                            <svg class="w-4 h-4 ml-1 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <span class="px-3 py-1 bg-[#f7ad32] text-[#a05334] rounded-full text-sm mr-2">Mental Health</span>
+                        <span class="px-3 py-1 bg-[#bb420b] bg-opacity-10 text-[#a05334] rounded-full text-sm">Empowerment</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Championing mental health awareness through powerful performances</p>
+                    <div class="border-t pt-4">
+                        <p class="text-[#a05334] italic">"My voice echoes the silenced"</p>
+                    </div>
+                </div>
+
+                <div class="bg-white group p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative mb-6 overflow-hidden">
+                        <div class="absolute -inset-2  rounded-2xl transform -rotate-3 transition duration-300 group-hover:-rotate-2"></div>
+                        <img src="https://img.freepik.com/free-photo/joyous-man-delighted-read-book-having-fun-enjoying-plot_482257-93769.jpg?t=st=1743053692~exp=1743057292~hmac=8456ba0c140fc784b45b00036534243c544eb6ba91a3cdb6165b5fc0af337c42&w=740" 
+                             class="rounded-2xl relative w-full h-64 object-cover hover:scale-105 transition duration-300"
+                             alt="Poet Priya Mehta">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Sumit Sharma</h3>
+                            <p class="text-sm text-gray-500">Spoken Word Artist</p>
+                        </div>
+                        <div class="flex items-center bg-[#f7ad32] px-2 py-1 rounded-full">
+                            <span class="text-sm font-semibold text-[#a05334]">4.9</span>
+                            <svg class="w-4 h-4 ml-1 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <span class="px-3 py-1 bg-[#f7ad32] text-[#a05334] rounded-full text-sm mr-2">Mental Health</span>
+                        <span class="px-3 py-1 bg-[#bb420b] bg-opacity-10 text-[#a05334] rounded-full text-sm">Empowerment</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Championing mental health awareness through powerful performances</p>
+                    <div class="border-t pt-4">
+                        <p class="text-[#a05334] italic">"My voice echoes the silenced"</p>
+                    </div>
+                </div>
+
+                <div class="bg-white group p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="relative mb-6 overflow-hidden">
+                        <div class="absolute -inset-2 bg-pink-100 rounded-2xl transform -rotate-3 transition duration-300 group-hover:-rotate-2"></div>
+                        <img src="https://img.freepik.com/free-photo/vertical-shot-young-caucasian-brunette-red-stylish-blouse-reading-book-bench-park_181624-46854.jpg?t=st=1743053805~exp=1743057405~hmac=bf1d77fec9e0196b7b529fcb49b16e2ef220ca6e512c4a83fe63495019f353c9&w=740" 
+                             class="rounded-2xl relative w-full h-64 object-cover hover:scale-105 transition duration-300"
+                             alt="Poet Priya Mehta">
+                    </div>
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-[#a05334]">Kriti Sharma</h3>
+                            <p class="text-sm text-gray-500">Spoken Word Artist</p>
+                        </div>
+                        <div class="flex items-center bg-[#f7ad32] px-2 py-1 rounded-full">
+                            <span class="text-sm font-semibold text-[#a05334]">4.8</span>
+                            <svg class="w-4 h-4 ml-1 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <span class="px-3 py-1 bg-[#f7ad32] text-[#a05334] rounded-full text-sm mr-2">Mental Health</span>
+                        <span class="px-3 py-1 bg-[#bb420b] bg-opacity-10 text-[#a05334] rounded-full text-sm">Empowerment</span>
+                    </div>
+                    <p class="text-gray-600 mb-4 text-sm">Championing mental health awareness through powerful performances</p>
+                    <div class="border-t pt-4">
+                        <p class="text-[#a05334] italic">"My voice echoes the silenced"</p>
+                    </div>
+                </div>
+    
+                <!-- Add 4 more poet cards following the same pattern with different:
+                     - Images
+                     - Names
+                     - Ratings
+                     - Tags
+                     - Descriptions
+                     - Quotes
+                     - AOS delays (200, 300, 400, 500ms)
+                     - Alternating background rotations -->
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #f7ad32, #bb420b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    
+        .poet-card:hover .poet-image {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <!-- Poetry in Action Section -->
+    <section class="py-20 bg-[#f7ad32] text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-8">Recent Achievements</h2>
+                <p class="text-xl mb-8">500+ women empowered through our programs</p>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="py-4" data-aos="zoom-in">
+                        <div class="text-4xl mb-2">📚</div>
+                        <div class="text-2xl font-bold">120+</div>
+                        <div>Poetry Workshops</div>
+                    </div>
+                    <div class="py-4" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="text-4xl mb-2">🎤</div>
+                        <div class="text-2xl font-bold">75+</div>
+                        <div>Open Mic Events</div>
+                    </div>
+                    <div class="py-4" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-4xl mb-2">💼</div>
+                        <div class="text-2xl font-bold">30+</div>
+                        <div>Published Authors</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, #f7ad32, #bb420b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-8 gradient-text" data-aos="fade-up">
+                Empowering Voices Through Poetry
+            </h1>
+            <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                A revolutionary literary movement celebrating women's empowerment through verse and prose
+            </p>
+            <button class="bg-[#f7ad32] text-white px-8 py-3 rounded-full hover:bg-purple-700 transition transform hover:scale-105">
+                Join Our Next Session
+            </button>
+            <!-- <div class="mt-20 floating">
+                <svg class="w-24 h-24 mx-auto text-[#f7ad32]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+                </svg>
+            </div> -->
+        </div>
+    </section>
+
+    
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-purple-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text" data-aos="fade-up">Upcoming Events</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event Card 1 -->
+                <div class="bg-white group p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in">
+                    <div class="text-purple-600 text-4xl mb-6 transform transition duration-300 group-hover:scale-110">📚</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#a05334]">Poetry Workshop</h3>
+                    <p class="text-gray-600 mb-6">Master the art of feminist poetry with renowned poetess Aasha Verma</p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[#a05334] font-medium">15th March | Delhi</div>
+                        <button class="px-4 py-2 bg-[#f7ad32] text-[#a05334] rounded-full hover:bg-purple-600 hover:text-white transition">
+                            Register
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Event Card 2 -->
+                <div class="bg-white group p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-pink-600 text-4xl mb-6 transform transition duration-300 group-hover:scale-110">🎤</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#a05334]">Open Mic Night</h3>
+                    <p class="text-gray-600 mb-6">Share your voice at our monthly women's poetry open mic</p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[#a05334] font-medium">22nd March | Online</div>
+                        <button class="px-4 py-2 bg-[#f7ad32] text-[#a05334] rounded-full hover:bg-pink-600 hover:text-white transition">
+                            Join
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Event Card 3 -->
+                <div class="bg-white group p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-purple-600 text-4xl mb-6 transform transition duration-300 group-hover:scale-110">💻</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#a05334]">Digital Poetry</h3>
+                    <p class="text-gray-600 mb-6">Learn to create impactful digital poetry content</p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[#a05334] font-medium">5th April | Hybrid</div>
+                        <button class="px-4 py-2 bg-[#f7ad32] text-[#a05334] rounded-full hover:bg-purple-600 hover:text-white transition">
+                            Register
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Event Card 4 -->
+                <div class="bg-white group p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-pink-600 text-4xl mb-6 transform transition duration-300 group-hover:scale-110">📖</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#a05334]">Book Launch</h3>
+                    <p class="text-gray-600 mb-6">Celebrate the release of "Voices Unbound" anthology</p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[#a05334] font-medium">12th April | Delhi</div>
+                        <button class="px-4 py-2 bg-[#f7ad32] text-[#a05334] rounded-full hover:bg-pink-600 hover:text-white transition">
+                            RSVP
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Event Card 5 -->
+                <div class="bg-white group p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-purple-600 text-4xl mb-6 transform transition duration-300 group-hover:scale-110">🌍</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#a05334]">Global Poetry</h3>
+                    <p class="text-gray-600 mb-6">International poetry exchange with feminist writers</p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[#a05334] font-medium">20th April | Online</div>
+                        <button class="px-4 py-2 bg-[#f7ad32] text-[#a05334] rounded-full hover:bg-purple-600 hover:text-white transition">
+                            Join
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Event Card 6 -->
+                <div class="bg-white group p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="text-pink-600 text-4xl mb-6 transform transition duration-300 group-hover:scale-110">🎓</div>
+                    <h3 class="text-xl font-bold mb-4 text-[#a05334]">Poetry Masterclass</h3>
+                    <p class="text-gray-600 mb-6">Advanced techniques with award-winning poet Meera Desai</p>
+                    <div class="flex items-center justify-between">
+                        <div class="text-[#a05334] font-medium">28th April | Delhi</div>
+                        <button class="px-4 py-2 bg-[#f7ad32] text-[#a05334] rounded-full hover:bg-pink-600 hover:text-white transition">
+                            Register
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #f7ad32, #bb420b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    
+        .event-card {
+            transition: all 0.3s ease;
+        }
+    
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+
+<section id="collaborate" class="py-20 relative overflow-hidden bg-gradient-to-br from-[#f7ad32] to-[#bb420b]">
+    <!-- Floating Elements -->
+    <div class="absolute top-20 left-20 w-48 h-48 bg-orange-300/10 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-20 right-20 w-48 h-48 bg-amber-300/10 rounded-full blur-3xl animate-float-delayed"></div>
+
+    <div class="container mx-auto px-6 relative">
+        <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-orange-100 mb-8">
+                Join Our Literary Revolution
+            </h2>
+            <p class="text-xl text-orange-50 mb-12">
+                Collaborate to Create Lasting Social Impact Through Poetry
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Collaboration Points -->
+            <div class="space-y-8" data-aos="fade-right">
+                <div class="p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-orange-200/20 hover:border-orange-200/30 transition">
+                    <h3 class="text-2xl font-bold text-orange-50 mb-6">How You Can Contribute</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="w-8 h-8 bg-orange-500/20 rounded-full flex items-center justify-center ">
+                                
+                            </div>
+                            <span class="text-orange-100 flex-1">Publish women-centric poetry anthologies</span>
+                        </li>
+                        <!-- Repeated similar list items with orange color scheme -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center" data-aos="fade-left">
+                <div class="p-8 bg-white/15 backdrop-blur-lg rounded-2xl border border-orange-200/25 hover:border-orange-200/35 transition">
+                    <div class="text-6xl mb-6 animate-pulse">🤝</div>
+                    <h3 class="text-2xl font-bold text-orange-50 mb-4">Let's Create Impact Together</h3>
+                    <p class="text-orange-100 mb-8">
+                        Your support can fuel a generation of empowered women writers
+                    </p>
+                    <div class="space-y-4">
+                        <a href="tel:9350267100" class="inline-block w-full px-8 py-3 bg-orange-500 hover:bg-amber-700 text-white rounded-full transition transform hover:scale-105">
+                            Call Now: +91 93502 67100
+                        </a>
+                        <div class="text-orange-200 mt-4">
+                            or DM us on <br>
+                            <a href="https://instagram.com/wordsbydeepali" class="text-orange-50 font-semibold hover:text-amber-300 transition">
+                                @wordsbydeepali
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rest of the style and script sections remain same -->
+      <!-- Animated Signature -->
+    <div class="absolute bottom-8 right-8 opacity-20 hover:opacity-100 transition">
+        <svg class="w-32 text-pink-400" viewBox="0 0 200 60">
+            <path fill="currentColor" d="M20 40 Q30 20 40 40 Q50 60 60 40 Q70 20 80 40 Q90 60 100 40 Q110 20 120 40 Q130 60 140 40 Q150 20 160 40 Q170 60 180 40" 
+                  stroke-width="2" fill="none" stroke="currentColor" class="animate-draw">
+        </svg>
+    </div>
+
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(3deg); }
+        }
+
+        .animate-float { animation: float 8s ease-in-out infinite; }
+        .animate-float-delayed { animation: float 8s ease-in-out infinite 2s; }
+
+        @keyframes draw {
+            to { stroke-dashoffset: 0; }
+        }
+
+        .animate-draw {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: draw 3s ease-out forwards;
+        }
+
+        [data-aos="fade-up"] {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        [data-aos="fade-up"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+
+        .preserve-3d {
+            transform-style: preserve-3d;
+        }
+
+        .rotate-y-12 {
+            transform: rotateY(12deg);
+        }
+    </style>
+
+    <script>
+        // Initialize animations
+        AOS.init({
+            duration: 1200,
+            once: true,
+            easing: 'ease-out-back'
+        });
+
+        // GSAP animations for list items
+        gsap.utils.toArray('.opacity-0').forEach((item, index) => {
+            gsap.to(item, {
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top center+=200"
+                },
+                opacity: 1,
+                x: 0,
+                duration: 0.8,
+                delay: index * 0.2
+            });
+        });
+
+        // Particles.js initialization
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 80 },
+                color: { value: '#a78bfa' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.3 },
+                size: { value: 3 },
+                move: {
+                    enable: true,
+                    speed: 1,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: { enable: true, mode: 'repulse' },
+                    onclick: { enable: true, mode: 'push' },
+                    resize: true
+                }
+            }
+        });
+    </script>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text" data-aos="fade-up">Join the Movement</h2>
+            <form class="space-y-6">
+                <input type="text" placeholder="Your Name" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500">
+                <input type="email" placeholder="Your Email" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500">
+                <textarea rows="5" placeholder="Your Message" class="w-full p-4 border rounded-xl focus:ring-2 focus:ring-purple-500"></textarea>
+                <button class="w-full bg-[#f7ad32] text-white py-4 rounded-xl hover:bg-purple-700 transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.classList.add('bg-white/95');
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.classList.remove('bg-white/95');
+            }
+        });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out'
+        });
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu on click outside
+        document.addEventListener('click', (e) => {
+            if (!menuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('shadow-lg', window.scrollY > 50);
+            nav.classList.toggle('bg-white/95', window.scrollY > 50);
+        });
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+    <!-- Add this before closing body tag -->
+<footer class="bg-[#bb420b]  text-white mt-20">
+    <div class="container mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8" data-aos="fade-up">
+            <!-- About Section -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-[#f7ad32]">Delhi Kavitri Manch</h3>
+                <p class="text-gray-300 text-sm">Empowering women through the transformative power of poetry and literature since 2018.</p>
+                <div class="flex space-x-4 mt-4">
+                    <!-- Twitter -->
+                    <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="Twitter">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                
+                    <!-- Facebook -->
+                    <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="Facebook">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                
+                    <!-- Instagram -->
+                    <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="Instagram">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                    </a>
+                
+                    <!-- LinkedIn -->
+                    <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="LinkedIn">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                
+                    <!-- YouTube -->
+                    <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="YouTube">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                
+                    <!-- GitHub -->
+                    <a href="#" class="text-[#f7ad32] hover:text-white transition transform hover:scale-110" aria-label="GitHub">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.332-1.756-1.332-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-[#f7ad32]">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="/index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                    <li><a href="/about.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                    <li><a href="/events.html" class="text-gray-300 hover:text-white transition">Events</a></li>
+                    <li><a href="/contact.html" class="text-gray-300 hover:text-white transition">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-[#f7ad32]">Contact Us</h4>
+                <div class="space-y-2 text-gray-300">
+                    <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-[#f7ad32]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        D-1/75 ,Sector 16 Rohini ,Delhi 110089
+                    </p>
+                    <p class="flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-[#f7ad32]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        Ddeepali.chowdhary@gmail.com
+                    </p>
+                </div>
+            </div>Delhi
+
+            <!-- Newsletter -->
+            <div class="space-y-4">
+                <h4 class="text-lg font-semibold text-[#f7ad32]">Stay Updated</h4>
+                <form class="flex flex-col space-y-3">
+                    <input type="email" placeholder="Your email" class="px-4 py-2 rounded-lg  border border-[#f7ad32] focus:outline-none focus:ring-2 focus:ring-pink-300">
+                    <button class="bg-[#f7ad32] text-white px-4 py-2 rounded-lg hover:bg-[#a05334] transition transform hover:scale-105">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-[#f7ad32] mt-8 pt-8 text-center text-gray-400 text-sm" data-aos="fade-up">
+            <p class = "text-[#f7ad32]">© 2025 Delhi Kavitri Manch. All rights reserved.</p>
+            <p class="mt-2  text-[#f7ad32]">Empowering women through literature and poetry</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
